@@ -1,3 +1,5 @@
+import fetch, { Request } from 'node-fetch';
+
 type Arguments = {
   endpoint: string
   body: any
