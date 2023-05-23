@@ -10,6 +10,7 @@
     "./components": "./dist/components/index.js"
   },
   "scripts": {
+    "postinstall": "tsc --build",
     "watch": "tsc --watch",
     "build": "tsc --build",
     "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
@@ -29,7 +30,7 @@
   "homepage": "https://github.com/RivercodeAB/facebook-conversion-api-nextjs#readme",
   "dependencies": {
     "formdata-node": "^4.4.1",
-    "node-fetch": "^3.3.1",
+    "node-fetch": "^2.6.11",
     "universal-cookie": "^4.0.4",
     "uuid": "^9.0.0"
   },
@@ -40,6 +41,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.16.1",
+    "@types/node-fetch": "^2.6.4",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.1",
     "@types/uuid": "^9.0.1",
